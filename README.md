@@ -37,7 +37,7 @@ The AMD Research IBS Toolkit is split into three major pieces, each of which is 
 *  When installed, this will create two new devices per CPU core:
     - /dev/cpu/<cpu\_id>/ibs/fetch
     - /dev/cpu/<cpu\_id>/ibs/op
-* These two devices can be read using poll and read commands. In addition, there are a number if ioctl commands that can be used to configure and query information about the devices.
+* These two devices can be read using poll and read commands. In addition, there are a number of ioctl commands that can be used to configure and query information about the devices.
     - The structs used by reads, and the ioctl commands, are defined in: [./include/ibs-uapi.h](include/ibs-uapi.h)
     - A list of bit value locations from the AMD manuals that describe individual entries in each IBS reading are contained in: [./include/ibs-msr-index.h](include/ibs-msr-index.h)
         - These last two files are dual licensed. You can choose to use them under the [GPLv2](include/LICENSE.gpl) or under a [3-clause BSD license](include/LICENSE.bsd).
